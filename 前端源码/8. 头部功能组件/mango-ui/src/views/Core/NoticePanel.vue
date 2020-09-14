@@ -5,10 +5,10 @@
       <div v-for="item in data" :key="item.key" class="notice-item">
         <span class="notice-icon">
           <li :class="item.icon"></li>
-        </span>  
-        <span class="notice-cotent">
+        </span>
+        <span class="notice-content">
           {{ item.content }}
-        </span>  
+        </span>
       </div>
     </div>
     <div class="notice-footer">查看所有通知</div>

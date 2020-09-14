@@ -3,47 +3,47 @@
     <div class="personal-desc" :style="{'background':this.$store.state.app.themeColor}">
         <div class="avatar-container">
           <img class="avatar" :src="require('@/assets/user.png')" />
-        </div>  
+        </div>
         <div class="name-role">
-          <span class="sender">{{ user.nickName }} - {{ user.roleNames }}</span>  
-        </div>  
+          <span class="sender">{{ user.nickName }} - {{ user.roleNames }}</span>
+        </div>
         <div class="registe-info">
           <span class="registe-info">
             <li class="fa fa-clock-o"></li>
             {{ this.dateFormat(user.createTime) }}
           </span>
-        </div>  
+        </div>
     </div>
     <div class="personal-relation">
-        <span class="relation-item">followers</span>  
-        <span class="relation-item">watches</span>  
+        <span class="relation-item">followers</span>
+        <span class="relation-item">watches</span>
         <span class="relation-item">friends</span>
     </div>
     <div class="main-operation">
         <span class="main-operation-item" @click="openPersonCenter">
           <el-button size="small" icon="fa fa-male" > 个人中心</el-button>
-        </span>    
+        </span>
         <span class="main-operation-item" @click="openupdatePasswordDialog">
           <el-button size="small" icon="fa fa-key"> 修改密码</el-button>
-        </span>    
+        </span>
     </div>
     <div class="other-operation">
         <div class="other-operation-item" @click="clearCache">
           <li class="fa fa-eraser"></li>
           清除缓存
-        </div>    
+        </div>
         <div class="other-operation-item" @click="openOnlinePage">
           <li class="fa fa-user"></li>
           在线人数 {{onlineUser}}
-        </div>    
+        </div>
         <div class="other-operation-item">
           <li class="fa fa-bell"></li>
           访问次数 {{accessTimes}}
-        </div>    
+        </div>
         <div class="other-operation-item" @click="showBackupDialog">
           <li class="fa fa-undo"></li>
           {{$t("common.backupRestore")}}
-        </div>    
+        </div>
     </div>
     <div class="personal-footer" @click="logout">
       <li class="fa fa-sign-out"></li>
@@ -58,13 +58,13 @@
         <el-form-item label="新密码" prop="newPassword">
           <el-input v-model="updatePwdDataForm.newPassword" type="password" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="确认新密码" prop="comfirmPassword">
-          <el-input v-model="updatePwdDataForm.comfirmPassword" type="password" auto-complete="off"></el-input>
+        <el-form-item label="确认新密码" prop="ConfirmPassword">
+          <el-input v-model="updatePwdDataForm.ConfirmPassword" type="password" auto-complete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button :size="size" @click.native="updatePwdDialogVisible = false">{{$t('action.cancel')}}</el-button>
-        <el-button :size="size" type="primary" @click.native="updatePassword" :loading="updatePwdLoading">{{$t('action.comfirm')}}</el-button>
+        <el-button :size="size" type="primary" @click.native="updatePassword" :loading="updatePwdLoading">{{$t('action.Confirm')}}</el-button>
       </div>
     </el-dialog>
     <!--备份还原界面-->
@@ -101,7 +101,7 @@ export default {
       updatePwdDataForm: {
 				password: '',
 				newPassword: '',
-				comfirmPassword: ''
+				ConfirmPassword: ''
 			},
       updatePwdDataFormRules: {
 				password: [
@@ -110,7 +110,7 @@ export default {
         newPassword: [
 					{ required: true, message: '请输入新密码', trigger: 'blur' }
         ],
-        comfirmPassword: [
+        ConfirmPassword: [
 					{ required: true, message: '请确认密码', trigger: 'blur' }
 				]
 			},
@@ -129,7 +129,7 @@ export default {
 		updatePassword: function () {
 			this.$refs.updatePwdDataForm.validate((valid) => {
 				if (valid) {
-          if(this.updatePwdDataForm.newPassword != this.updatePwdDataForm.comfirmPassword) {
+          if(this.updatePwdDataForm.newPassword != this.updatePwdDataForm.ConfirmPassword) {
             this.$message({message: '新密码与确认新密码不一致', type: 'error'})
             return
           }
@@ -180,11 +180,11 @@ export default {
         })
     },
     // 清除Cookie
-    deleteCookie(name){     
-         var myDate = new Date()   
-         myDate.setTime(-1000) // 设置过期时间     
-         document.cookie = name+"=''; expires="+myDate.toGMTString();              
-    },    
+    deleteCookie(name){
+         var myDate = new Date()
+         myDate.setTime(-1000) // 设置过期时间
+         document.cookie = name+"=''; expires="+myDate.toGMTString();
+    },
     // 获取在线用户数
 		countOnlineUser() {
       let pageRequest = { pageNum: 1, pageSize: 10000000 }

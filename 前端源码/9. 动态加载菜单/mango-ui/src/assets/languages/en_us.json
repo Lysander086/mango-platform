@@ -8,10 +8,10 @@
         "projectRepo": "Project",
         "myMsg": "My Message",
         "config": "Config",
-        "backup": "Backup",  
-        "restore": "Restore",  
-        "backupRestore": "Backup Restore",  
-        "versionName": "Version",  
+        "backup": "Backup",
+        "restore": "Restore",
+        "backupRestore": "Backup Restore",
+        "versionName": "Version",
         "exit": "Exit"
     },
     "action": {
@@ -23,7 +23,7 @@
         "search": "Search",
         "loading": "loading",
         "submit": "Submit",
-        "comfirm": "Comfirm",
+        "Confirm": "Confirm",
         "cancel": "Cancel",
         "reset": "Reset"
     }

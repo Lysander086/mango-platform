@@ -30,14 +30,14 @@ fnCreate(loginlog, openMock)
  * @param {*} mod 模块
  * @param {*} isOpen 是否开启?
  */
-function fnCreate (mod, isOpen = true) {
-  
+function fnCreate(mod, isOpen = true) {
+
   if (isOpen) {
     for (var key in mod) {
       ((res) => {
         if (res.isOpen !== false) {
           let url = baseUrl
-          if(!url.endsWith("/")) {
+          if (!url.endsWith("/")) {
             url = url + "/"
           }
           url = url + res.url

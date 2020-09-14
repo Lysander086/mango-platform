@@ -20,10 +20,10 @@
       <el-table-column
         prop="id" header-align="center" align="center" width="80" label="ID">
       </el-table-column>
-      <table-tree-column 
+      <table-tree-column
         prop="name" header-align="center" treeKey="id" width="150" label="名称">
       </table-tree-column>
-      <el-table-column 
+      <el-table-column
         prop="parentName" header-align="center" align="center" width="120" label="上级机构">
       </el-table-column>
       <el-table-column
@@ -45,14 +45,14 @@
     </el-table>
     <!-- 新增修改界面 -->
     <el-dialog :title="!dataForm.id ? '新增' : '修改'" width="40%" :visible.sync="dialogVisible" :close-on-click-modal="false">
-      <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="submitForm()" 
+      <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="submitForm()"
         label-width="80px" :size="size" style="text-align:left;">
         <el-form-item label="名称" prop="name">
           <el-input v-model="dataForm.name" placeholder="名称"></el-input>
         </el-form-item>
         <el-form-item label="上级机构" prop="parentName">
-            <popup-tree-input 
-              :data="popupTreeData" :props="popupTreeProps" :prop="dataForm.parentName==null?'顶级菜单':dataForm.parentName" 
+            <popup-tree-input
+              :data="popupTreeData" :props="popupTreeProps" :prop="dataForm.parentName==null?'顶级菜单':dataForm.parentName"
               :nodeKey="''+dataForm.parentId" :currentChangeHandle="handleTreeSelectChange">
             </popup-tree-input>
         </el-form-item>
@@ -62,7 +62,7 @@
       </el-form>
       <span slot="footer" class="dialog-footer">
         <el-button :size="size"  @click="dialogVisible = false">{{$t('action.cancel')}}</el-button>
-        <el-button :size="size"  type="primary" @click="submitForm()">{{$t('action.comfirm')}}</el-button>
+        <el-button :size="size"  type="primary" @click="submitForm()">{{$t('action.Confirm')}}</el-button>
       </span>
     </el-dialog>
   </div>
@@ -200,7 +200,7 @@ export default {
     dateFormat: function (row, column, cellValue, index){
       return format(row[column.property])
     }
-    
+
 	},
 	mounted() {
     this.findTreeData()

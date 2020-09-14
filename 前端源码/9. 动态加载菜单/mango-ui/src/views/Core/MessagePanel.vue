@@ -5,16 +5,16 @@
       <div v-for="item in data" :key="item.key" class="message-item">
         <div class="message-avatar">
           <img class="avatar" :src="require('@/assets/user.png')" />
-        </div>  
+        </div>
         <span class="sender">
           {{ item.sender }}
-        </span>  
+        </span>
         <span class="time">
           <li class="fa fa-clock-o"></li> {{ item.time }}
-        </span>  
-        <div class="message-cotent">
+        </span>
+        <div class="message-content">
           {{ item.content }}
-        </div>  
+        </div>
       </div>
     </div>
     <div class="message-footer">查看所有消息</div>

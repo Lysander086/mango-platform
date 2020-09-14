@@ -1,0 +1,4 @@
+config.js：axios默认配置，包含基础路径等信息。
+axios.js：二次封装axios模块，包含拦截器等信息。
+api.js：请求接口汇总模块，聚合所有模块API。index.js：将axios封装成插件，按插件方式引入。
+modules：用户管理、菜单管理等子模块API。

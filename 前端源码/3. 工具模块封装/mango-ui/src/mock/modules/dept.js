@@ -1,4 +1,4 @@
-/* 
+/*
  * 机构管理模块
  */
 
@@ -34,18 +34,18 @@ export function findDeptTree(params) {
     "data": {}
   }
   let content = []
-  for(let i=0; i<3; i++) {
+  for (let i = 0; i < 3; i++) {
     let obj = {}
-    obj.id   = i + 1
-    obj.parentId   = 0
+    obj.id = i + 1
+    obj.parentId = 0
     obj.name = '机构部门  ' + obj.id
     obj.parentName = "顶级机构"
     obj.children = []
     content.push(obj)
   }
-  for(let i=0; i<content.length; i++) {
+  for (let i = 0; i < content.length; i++) {
     let parent = content[i]
-    for(let j=0; j<5; j++) {
+    for (let j = 0; j < 5; j++) {
       let obj = {}
       obj.id = (i + 1) + "" + (j + 1)
       obj.parentId = parent.id

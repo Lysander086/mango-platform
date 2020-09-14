@@ -3,47 +3,47 @@
     <div class="personal-desc" :style="{'background':this.$store.state.app.themeColor}">
         <div class="avatar-container">
           <img class="avatar" :src="require('@/assets/user.png')" />
-        </div>  
+        </div>
         <div class="name-role">
-          <span class="sender">{{ user.name }} - {{ user.role }}</span>  
-        </div>  
-        <div class="registe-info">
-          <span class="registe-info">
+          <span class="sender">{{ user.name }} - {{ user.role }}</span>
+        </div>
+        <div class="register-info">
+          <span class="register-info">
             <li class="fa fa-clock-o"></li>
-            {{ user.registeInfo }}
+            {{ user.registerInfo }}
           </span>
-        </div>  
+        </div>
     </div>
     <div class="personal-relation">
-        <span class="relation-item">followers</span>  
-        <span class="relation-item">watches</span>  
+        <span class="relation-item">followers</span>
+        <span class="relation-item">watches</span>
         <span class="relation-item">friends</span>
     </div>
     <div class="main-operation">
         <span class="main-operation-item">
           <el-button size="small" icon="fa fa-male"> 个人中心</el-button>
-        </span>    
+        </span>
         <span class="main-operation-item">
           <el-button size="small" icon="fa fa-key"> 修改密码</el-button>
-        </span>    
+        </span>
     </div>
     <div class="other-operation">
         <div class="other-operation-item">
           <li class="fa fa-eraser"></li>
           清除缓存
-        </div>    
+        </div>
         <div class="other-operation-item">
           <li class="fa fa-user"></li>
           在线人数
-        </div>    
+        </div>
         <div class="other-operation-item">
           <li class="fa fa-bell"></li>
           访问次数
-        </div>    
+        </div>
         <div class="other-operation-item">
           <li class="fa fa-undo"></li>
           {{$t("common.backupRestore")}}
-        </div>    
+        </div>
     </div>
     <div class="personal-footer" @click="logout">
       <li class="fa fa-sign-out"></li>
@@ -64,7 +64,7 @@ export default {
         name: "admin",
         avatar: "@/assets/user.png",
         role: "超级管理员",
-        registeInfo: "注册时间：2018-12-25 "
+        registerInfo: "注册时间：2018-12-25 "
       }
     }
   },

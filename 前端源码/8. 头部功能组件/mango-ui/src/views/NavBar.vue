@@ -1,25 +1,26 @@
 <template>
-	<div class="menu-bar-container">
+  <div class="menu-bar-container">
     <!-- logo -->
     <div class="logo" :style="{'background':themeColor}" @click="$router.push('/')"
-      :class="collapse?'menu-bar-collapse-width':'menu-bar-width'">
-      <img v-if="collapse"  src="@/assets/logo.png"/> <div>{{collapse?'':appName}}</div>
+         :class="collapse?'menu-bar-collapse-width':'menu-bar-width'">
+      <img v-if="collapse" src="@/assets/logo.png"/>
+      <div>{{collapse?'':appName}}</div>
     </div>
-	</div>
+  </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import {mapState} from 'vuex'
+
 export default {
-    computed: {
+  computed: {
     ...mapState({
-      appName: state=>state.app.appName,
-      themeColor: state=>state.app.themeColor,
-      collapse: state=>state.app.collapse
+      appName: state => state.app.appName,
+      themeColor: state => state.app.themeColor,
+      collapse: state => state.app.collapse
     })
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>
 
@@ -30,20 +31,23 @@ export default {
   left: 0;
   bottom: 0;
   z-index: 1020;
+
   .logo {
-    position:absolute;
+    position: absolute;
     top: 0px;
-    height: 60px;   
+    height: 60px;
     line-height: 60px;
     background: #545c64;
-    cursor:pointer;
+    cursor: pointer;
+
     img {
-        width: 40px;
-        height: 40px;
-        border-radius: 0px;
-        margin: 10px 10px 10px 10px;
-        float: left;
+      width: 40px;
+      height: 40px;
+      border-radius: 0px;
+      margin: 10px 10px 10px 10px;
+      float: left;
     }
+
     div {
       font-size: 22px;
       color: white;
@@ -51,9 +55,11 @@ export default {
       padding-left: 20px;
     }
   }
+
   .menu-bar-width {
     width: 200px;
   }
+
   .menu-bar-collapse-width {
     width: 65px;
   }

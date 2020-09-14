@@ -1,9 +1,9 @@
-<template> 
-  <div class="headbar" :style="{'background':themeColor}"  
+<template>
+  <div class="headbar" :style="{'background':themeColor}"
     :class="collapse?'position-collapse-left':'position-left'">
     <!-- 导航收缩 -->
     <span class="hamburg">
-      <el-menu class="el-menu-demo" :background-color="themeColor" text-color="#fff" 
+      <el-menu class="el-menu-demo" :background-color="themeColor" text-color="#fff"
         :active-text-color="themeColor" mode="horizontal">
         <el-menu-item index="1" @click="onCollapse">
           <hamburger :isActive="collapse"></hamburger>
@@ -12,7 +12,7 @@
     </span>
     <!-- 导航菜单 -->
     <span class="navbar">
-      <el-menu :default-active="activeIndex" class="el-menu-demo" 
+      <el-menu :default-active="activeIndex" class="el-menu-demo"
           :background-color="themeColor" text-color="#fff" active-text-color="#ffd04b" mode="horizontal" @select="selectNavBar()">
         <el-menu-item index="1" @click="$router.push('/')">{{$t("common.home")}}</el-menu-item>
         <el-menu-item index="2" @click="openWindow('https://gitee.com/liuge1988/kitty/wikis/Home')">{{$t("common.doc")}}</el-menu-item>
@@ -21,11 +21,11 @@
     </span>
     <!-- 工具栏 -->
     <span class="toolbar">
-      <el-menu class="el-menu-demo" :background-color="themeColor" text-color="#14889A" 
+      <el-menu class="el-menu-demo" :background-color="themeColor" text-color="#14889A"
         :active-text-color="themeColor" mode="horizontal">
         <el-menu-item index="1">
           <!-- 主题切换 -->
-          <theme-picker class="theme-picker" :default="themeColor" 
+          <theme-picker class="theme-picker" :default="themeColor"
             @onThemeChange="onThemeChange">
           </theme-picker>
         </el-menu-item>
@@ -89,7 +89,7 @@ export default {
         name: "Louis",
         avatar: "",
         role: "超级管理员",
-        registeInfo: "注册时间：2018-12-20 "
+        registerInfo: "注册时间：2018-12-20 "
       },
       activeIndex: '1',
       langVisible: false
