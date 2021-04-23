@@ -1,10 +1,10 @@
 # mango
-
+- [高级版](https://gitee.com/liuge1988/kitty)
 ### 项目介绍
 
-Mango后台权限管理系统是基于Spring Boot、Spring Cloud、Vue.js 、Element UI等主流前后端技术，采用前后端分离架构实现的权限管理系统。也是一款采用当前主流技术实现的界面优雅、架构优良、代码简洁、注释完善、基础功能相对完整的JAVA EE快速开发平台，前后端开发人员都可以以此为范例从中学习和汲取技术知识，也可以基于此系统开发和实现具体生产项目。
+Mango 后台权限管理系统是基于 Spring Boot、Spring Cloud、Vue.js 、Element UI 等主流前后端技术，采用前后端分离架构实现的权限管理系统。也是一款采用当前主流技术实现的界面优雅、架构优良、代码简洁、注释完善、基础功能相对完整的 JAVA EE 快速开发平台，前后端开发人员都可以以此为范例从中学习和汲取技术知识，也可以基于此系统开发和实现具体生产项目。
 
-此项目为笔者和清华大学出版社合作出版的专业书籍《Spring Boot+Spring Cloud+Vue+Element项目实战：手把手教你开发权限管理系统》的配套附件，附件内容包含书籍项目相关源码、数据库脚本、项目安装和运行教程等。
+此项目为笔者和清华大学出版社合作出版的专业书籍《Spring Boot+Spring Cloud+Vue+Element 项目实战：手把手教你开发权限管理系统》的配套附件，附件内容包含书籍项目相关源码、数据库脚本、项目安装和运行教程等。
 
 #### 书籍封面
 
@@ -28,18 +28,17 @@ Mango后台权限管理系统是基于Spring Boot、Spring Cloud、Vue.js 、Ele
 
 [https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.6.a4721049QUevoi&id=596116466076](https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.6.a4721049QUevoi&id=596116466076)
 
-
 ### 技术交流
 
-为了方便大家提问和技术交流，整了个QQ群，欢迎童鞋们加入。
+为了方便大家提问和技术交流，整了个 QQ 群，欢迎童鞋们加入。
 
-QQ技术交流群： 429854222
+QQ 技术交流群： 429854222
 
 笔者技术博客：[https://www.cnblogs.com/xifengxiaoma/](https://www.cnblogs.com/xifengxiaoma/)
 
 ### 功能列表
 
-✔ 系统登录：系统用户登录，系统登录认证（token方式）
+✔ 系统登录：系统用户登录，系统登录认证（token 方式）
 
 ✔ 用户管理：新建用户，修改用户，删除用户，查询用户
 
@@ -59,27 +58,27 @@ QQ技术交流群： 429854222
 
 ✔ 在线用户：根据用户的登录状态，查看统计当前在线用户
 
-✔ 数据监控：定制Druid信息，提供简洁有效的SQL数据监控
+✔ 数据监控：定制 Druid 信息，提供简洁有效的 SQL 数据监控
 
-✔ 聚合文档：定制Swagger文档，提供简洁美观的API文档
+✔ 聚合文档：定制 Swagger 文档，提供简洁美观的 API 文档
 
 ✔ 备份还原：系统数据备份还原，一键恢复系统初始化数据
 
 ✔ 主题切换：支持主题切换，自定主题颜色，实现一键换肤
 
-✔ 服务治理：集成Consul注册中心，实现服务的注册和发现
+✔ 服务治理：集成 Consul 注册中心，实现服务的注册和发现
 
-✔ 服务监控：集成Spring Boot Admin，实现全方位的服务监控
+✔ 服务监控：集成 Spring Boot Admin，实现全方位的服务监控
 
-✔ 服务消费：集成Ribbon、Feign，实现服务调用和负载均衡
+✔ 服务消费：集成 Ribbon、Feign，实现服务调用和负载均衡
 
-✔ 服务熔断：集成Hystrix、Turbine，实现服务的熔断和监控
+✔ 服务熔断：集成 Hystrix、Turbine，实现服务的熔断和监控
 
-✔ 服务网关：集成Spring Cloud Zuul，实现统一API服务网关
+✔ 服务网关：集成 Spring Cloud Zuul，实现统一 API 服务网关
 
-✔ 链路追踪：集成Sleuth、Zipkin，实现服务分布式链路追踪
+✔ 链路追踪：集成 Sleuth、Zipkin，实现服务分布式链路追踪
 
-✔ 配置中心：集成Cloud Config和Bus，实现分布式配置中心
+✔ 配置中心：集成 Cloud Config 和 Bus，实现分布式配置中心
 
 ### 软件架构
 
@@ -113,11 +112,11 @@ NPM : NPM 6.4.x
 
 mango-ui
 
-  -- build：项目编译相关模块，项目模板自动生成
+-- build：项目编译相关模块，项目模板自动生成
 
-  -- config：项目配置相关模块，项目模板自动生成
+-- config：项目配置相关模块，项目模板自动生成
 
-  -- src：项目源码模块，前端开发工作集中在此目录
+-- src：项目源码模块，前端开发工作集中在此目录
 
      -- assets： 图标、字体、国际化信息等静态信息
 
@@ -187,7 +186,7 @@ mango-admin： 后台管理模块，包含用户、角色、菜单管理等
 
 mango-backup： 系统数据备份还原模块，可选择独立部署
 
-mango-monitor： 系统监控服务端，监控Spring Boot应用
+mango-monitor： 系统监控服务端，监控 Spring Boot 应用
 
 mango-producer： 服务提供者示例，方便在此基础上搭建模块
 
@@ -195,15 +194,15 @@ mango-consumer： 服务消费者示例，方便在此基础上搭建模块
 
 mango-hystrix： 服务熔断监控模块，收集汇总熔断统计信息
 
-mango-zuul： API服务网关模块，统一管理和转发外部调用请求
+mango-zuul： API 服务网关模块，统一管理和转发外部调用请求
 
-mango-config： 配置中心服务端，生成GIT配置文件的访问接口
+mango-config： 配置中心服务端，生成 GIT 配置文件的访问接口
 
 mango-consul： 注册中心，安装说明目录，内附安装引导说明
 
 mango-zipkin： 链路追踪，安装说明目录，内附安装引导说明
 
-config-repo： 配置中心仓库，在GIT上统一存储系统配置文件
+config-repo： 配置中心仓库，在 GIT 上统一存储系统配置文件
 
 mango-pom： 聚合模块，仅为简化打包，一键执行打包所有模块
 
@@ -212,56 +211,68 @@ mango-pom： 聚合模块，仅为简化打包，一键执行打包所有模块
 #### 前端安装
 
 ##### 获取源码
-获取前端源码，整个前端只有一个工程mango-ui，将其拷贝放置到本地目录。
+
+获取前端源码，整个前端只有一个工程 mango-ui，将其拷贝放置到本地目录。
 
 ##### 编译源码
-在mango-ui目录下打开CMD终端，执行 npm install, 下载和安装项目依赖包。
+
+在 mango-ui 目录下打开 CMD 终端，执行 npm install, 下载和安装项目依赖包。
 
 ##### 启动系统
+
 执行 npm run dev 命令，启动项目，启动之后通过 http://localhost:8080 访问。
 
 ##### 项目打包
+
 执行 npm run build 命令，进行前端项目打包，打包完成之后会生成 dist 目录。
-将生成的目录直接放置到如Tomcat之类的WEB服务器，启动服务即可访问。
+将生成的目录直接放置到如 Tomcat 之类的 WEB 服务器，启动服务即可访问。
 
 ##### Mock 开关
-本系统采用前后端分离架构，前端若开启Mock模块，可以模拟大部分接口数据。
-通过修改src/mock/index.js中的openMock变量，可以一键开启或关闭Mock功能。
+
+本系统采用前后端分离架构，前端若开启 Mock 模块，可以模拟大部分接口数据。
+通过修改 src/mock/index.js 中的 openMock 变量，可以一键开启或关闭 Mock 功能。
 
 ##### 修改配置
-如果想自定义端口（默认是8080），可以修改 config/index.js 下的 port 属性。
+
+如果想自定义端口（默认是 8080），可以修改 config/index.js 下的 port 属性。
 后台接口和备份服务器地址配置在 src/utils/global.js，如有修改请做相应变更。
 
 #### 后端安装
 
 ##### 获取源码
+
 获取后端源码，获取上面所列所有项目结构，将其拷贝放置到本地目录。
 
 ##### 导入工程
-使用 Eclipse导入 Maven 项目，在此之前请确认已安装 JDK 和 Maven 工具。
+
+使用 Eclipse 导入 Maven 项目，在此之前请确认已安装 JDK 和 Maven 工具。
 
 ##### 编译源码
+
 找到 mango-pom 工程下的 pom.xml，执行 maven clean install 命令进行一键打包。
 一般来说不会有什么问题，如果还打包失败，可以按照优先级逐个编译试一试。
 
 ##### 导入数据库
-新建mango数据库，使用项目sql目录下的mango.sql 脚本，导入初始化数据库。
+
+新建 mango 数据库，使用项目 sql 目录下的 mango.sql 脚本，导入初始化数据库。
 修改 mango-admin 下 application.yml 中的数据源配置信息为自己的数据库配置。
-修改 mango-backup下 application.yml 中的数据源配置信息为自己的数据库配置。
+修改 mango-backup 下 application.yml 中的数据源配置信息为自己的数据库配置。
 
 ##### 启动系统
 
 ###### 基础必需模块（注册中心：mango-consul，服务监控：mango-monitor）
 
 找到 mango-consul 工程，根据安装说明安装注册中心，执行 consul agent -dev 启动。
-找到 mango-monitor 工程下的MangoMonitorApplication， 启动项目，开启服务监控。
+找到 mango-monitor 工程下的 MangoMonitorApplication， 启动项目，开启服务监控。
 
 ###### 权限管理模块（权限管理：mango-admin，备份还原：mango-backup）
-找到 mango-admin 工程下的MangoAdminApplication， 启动项目，开启权限系统服务。
-找到 mango-backup 工程下的MangoBackupApplication.java，启动项目，开启备份服务。
 
-###### 其他示例模块（Spring Cloud示例模块，作为开发模板和范例，根据需要启动）
-以下为Spring Cloud体系各种功能的实现范例，可以根据需要启动，后续扩展开发也可以作为参考和模板使用，具体使用教程请参考本书后面Spring Cloud系列教程的章节，关于Spring Cloud体系的各种功能模块都有详细的讲解和完整的案例实现。
+找到 mango-admin 工程下的 MangoAdminApplication， 启动项目，开启权限系统服务。
+找到 mango-backup 工程下的 MangoBackupApplication.java，启动项目，开启备份服务。
+
+###### 其他示例模块（Spring Cloud 示例模块，作为开发模板和范例，根据需要启动）
+
+以下为 Spring Cloud 体系各种功能的实现范例，可以根据需要启动，后续扩展开发也可以作为参考和模板使用，具体使用教程请参考本书后面 Spring Cloud 系列教程的章节，关于 Spring Cloud 体系的各种功能模块都有详细的讲解和完整的案例实现。
 
 这些示例模块包括：
 
@@ -271,17 +282,17 @@ mango-consumer： 服务消费者示例，演示服务消费者的实现
 
 mango-hystrix： 服务熔断监控模块，演示熔断监控功能的实现
 
-mango-zuul： API服务网关模块，演示API统一网关的实现
+mango-zuul： API 服务网关模块，演示 API 统一网关的实现
 
 mango-config： 配置中心服务端，演示分布式配置中心的实现
 
 ##### 注意事项：
-注册中心是基础服务，需要先安装Consul，找到mango-consul工程，根据安装说明安装Consul。
 
-如果需要链路追踪服务，需要安装zipkin，找到mango-zipkin 工程，根据安装说明安装zipkin。
+注册中心是基础服务，需要先安装 Consul，找到 mango-consul 工程，根据安装说明安装 Consul。
 
-如果需要配置中心服务，需要安装rabbitMQ，找到mango-config 工程，根据安装说明安装rabbitMQ。
+如果需要链路追踪服务，需要安装 zipkin，找到 mango-zipkin 工程，根据安装说明安装 zipkin。
 
+如果需要配置中心服务，需要安装 rabbitMQ，找到 mango-config 工程，根据安装说明安装 rabbitMQ。
 
 ### 参与贡献
 
@@ -290,10 +301,9 @@ mango-config： 配置中心服务端，演示分布式配置中心的实现
 3. 提交代码
 4. 新建 Pull Request
 
-
 ### 码云特技
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
+1. 使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
 2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
 3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
 4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
