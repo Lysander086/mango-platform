@@ -15,8 +15,8 @@ import com.louis.mango.core.http.HttpResult;
 
 /**
  * 机构控制器
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 @RestController
 @RequestMapping("dept")

@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 数据源
- * @author Louis
- * @date Jan 15, 2019
+ * 
+ * 
  */
 @Component  
 @ConfigurationProperties(prefix = "mango.backup.datasource")  

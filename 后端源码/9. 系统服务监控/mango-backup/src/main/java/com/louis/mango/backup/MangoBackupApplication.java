@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 启动器
- * @author Louis
- * @date Jan 15, 2019
+ * 
+ * 
  */
 @SpringBootApplication(scanBasePackages={"com.louis.mango"})
 public class MangoBackupApplication {

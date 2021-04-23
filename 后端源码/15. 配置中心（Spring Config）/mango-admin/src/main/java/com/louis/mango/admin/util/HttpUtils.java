@@ -13,8 +13,8 @@ import com.louis.mango.core.http.HttpResult;
 
 /**
  * HTTP工具类
- * @author Louis
- * @date Jan 19, 2019
+ * 
+ * 
  */
 public class HttpUtils {
 

@@ -7,8 +7,8 @@ import com.louis.mango.core.page.PageResult;
 
 /**
  * 通用CURD接口
- * @author Louis
- * @date Jan 12, 2019
+ * 
+ * 
  */
 public interface CurdService<T> {
 	

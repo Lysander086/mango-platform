@@ -7,8 +7,8 @@ import com.louis.mango.core.service.CurdService;
 
 /**
  * 系统配置管理
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 public interface SysConfigService extends CurdService<SysConfig> {
 

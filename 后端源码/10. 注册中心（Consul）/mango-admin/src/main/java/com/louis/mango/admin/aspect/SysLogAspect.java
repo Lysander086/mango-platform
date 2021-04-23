@@ -19,8 +19,8 @@ import com.louis.mango.admin.util.SecurityUtils;
 
 /**
  * 系统日志，切面处理类，记录日志
- * @author Louis
- * @date Jan 19, 2019
+ * 
+ * 
  */
 @Aspect
 @Component

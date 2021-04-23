@@ -11,8 +11,8 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
  * Mybatis配置
- * @author Louis
- * @date Jan 11, 2019
+ * 
+ * 
  */
 @Configuration
 @MapperScan("com.louis.mango.**.dao")    // 扫描DAO

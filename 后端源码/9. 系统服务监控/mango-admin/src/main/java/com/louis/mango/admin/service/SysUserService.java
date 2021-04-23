@@ -11,8 +11,8 @@ import com.louis.mango.core.service.CurdService;
 
 /**
  * 用户管理
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 public interface SysUserService extends CurdService<SysUser> {
 

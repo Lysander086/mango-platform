@@ -9,8 +9,8 @@ import com.louis.mango.core.service.CurdService;
 
 /**
  * 角色管理
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 public interface SysRoleService extends CurdService<SysRole> {
 

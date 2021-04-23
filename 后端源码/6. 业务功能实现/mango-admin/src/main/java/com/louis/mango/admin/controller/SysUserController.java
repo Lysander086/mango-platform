@@ -23,8 +23,8 @@ import com.louis.mango.core.page.PageRequest;
 
 /**
  * 用户控制器
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 @RestController
 @RequestMapping("user")

@@ -29,8 +29,8 @@ import com.louis.mango.core.http.HttpResult;
 
 /**
  * 登录控制器
- * @author Louis
- * @date Jan 14, 2019
+ * 
+ * 
  */
 @RestController
 public class SysLoginController {

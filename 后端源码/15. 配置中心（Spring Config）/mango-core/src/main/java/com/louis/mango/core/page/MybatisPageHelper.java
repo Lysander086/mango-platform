@@ -8,8 +8,8 @@ import com.louis.mango.common.utils.ReflectionUtils;
 
 /**
  * MyBatis 分页查询助手
- * @author Louis
- * @date Jan 12, 2019
+ * 
+ * 
  */
 public class MybatisPageHelper {
 

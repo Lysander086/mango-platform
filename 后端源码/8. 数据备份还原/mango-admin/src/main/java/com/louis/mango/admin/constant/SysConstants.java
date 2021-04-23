@@ -2,8 +2,8 @@ package com.louis.mango.admin.constant;
 
 /**
  * 常量管理
- * @author Louis
- * @date Jan 13, 2019
+ * 
+ * 
  */
 public interface SysConstants {
 

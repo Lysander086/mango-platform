@@ -15,8 +15,8 @@ import com.louis.mango.admin.service.SysUserService;
 
 /**
  * 用户登录认证信息查询
- * @author Louis
- * @date Jan 14, 2019
+ * 
+ * 
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 文件相关操作
- * @author Louis
- * @date Jan 14, 2019
+ * 
+ * 
  */
 public class FileUtils {
 
